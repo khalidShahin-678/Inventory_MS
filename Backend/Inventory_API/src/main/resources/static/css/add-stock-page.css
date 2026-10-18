@@ -1,0 +1,107 @@
+#main-page {
+    width: 100%;
+    padding: 24px;
+}
+
+#search-bar-wrapper {
+    padding:  8px;
+    margin: 0 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    gap: 16px;
+
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+#search-bar-wrapper input:nth-child(2) {
+    width: 68%;
+}
+
+#search-bar-wrapper input:nth-child(3) {
+    width: 25%;
+}
+
+#table-wrapper {
+    min-height: 74vh;
+    max-height: 75vh;
+}
+
+table tbody input {
+    width: 80px;
+    height: 40px;
+    margin-left: 4px;
+}
+
+table button {
+    width: 38px;
+    height: 38px;
+}
+
+
+table img {
+    width: 16px;
+    height: 16px;
+}
+
+table thead th:first-child {
+    width: 50px;
+}
+
+table thead th:nth-child(3){
+    width: 160px;
+}
+table thead th:nth-child(4),
+table thead th:nth-child(5){
+    width: 100px;
+}
+
+
+#saveDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+#deleteBtn {
+    background: linear-gradient(135deg, #dd4646, #802525);
+}
+
+#search-bar-wrapper {
+    position: relative;
+}
+
+#dropdownSearchList {
+    position: absolute;
+    top: 89%;
+    right: 48px;
+    width: 67%;
+
+
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #60a5fa #eaf3ff;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+
+    background-color: #fff ;
+    color: #000e1f;
+    border-radius: 4px;
+    max-height: 500px;
+    border-bottom: solid #60a5fa 0.5px;
+}
+
+#dropdownSearchList p {
+    padding: 4px;
+    border-bottom: solid 1px #eee;
+    font-size: 18px;
+
+    transition: background-color 0.1s ;
+}
+
+#dropdownSearchList p:hover {
+    background-color: #f0f9ff;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة كارت صنف</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/components/sidebar.css">
+    <link rel="stylesheet" href="../css/components/input.css">
+    <link rel="stylesheet" href="../css/components/button.css">
+    <link rel="stylesheet" href="../css/components/select.css">
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/item-creation-page.css">
+
+</head>
+<body>
+    
+        <div id="sidebar">
+        <a href="../index.html">
+        <div id="sidebar-title">
+            <img src="../assets/icons-svg/boxes.svg" alt="boxes-icon">
+            <h2>المخزن</h2>
+        </div>
+        </a>
+        <div id="navbar">
+            <ul id="navbar-list">
+                <a href="inventory-items-page.html">
+                <li  id="items-page-nav" >
+                    <img src="../assets/icons-svg/box.svg" alt="box-icon">
+                    <p>الاصناف</p>
+                </li>
+                </a>
+                <a href="withdrawal-page.html">
+                <li id="withdraw-page-nav">
+                    <img src="../assets/icons-svg/transaction.svg" alt="transaction-icon">
+                    <p>الاصناف المسحوبة</p>
+                </li>
+                </a>
+
+                <a href="add-stock-page.html">
+                <li id="add-items-sotck-nav">
+                    <img src="../assets/icons-svg/add-icon.svg" alt="add-icon">
+                    <p>اضافة الي المخزن</p>
+                </li>
+                </a>
+                
+                <a href="item-creation-page.html">
+                <li id="add-items-page-nav" class="active">
+                    <img src="../assets/icons-svg/tag-icon.svg" alt="tag-icon">
+                    <p>اضافة كارت صنف</p>
+                </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+
+    <form method="post" action="http://localhost:8080/items" name="testForm">
+    <div id="add-item-form-wrapper">
+        <!-- Title of Form -->
+        <h3>إضافة كارت صنف</h3>
+        <!-- Arabic name Input -->
+        <div class="ar-name-wrapper">
+            <label for="arName">الإسم بالعربي </label>
+            <input type="text" name="arName" id="arName" maxlength="255" minlength="4" required>
+        </div>
+        <!-- English name Input -->
+        <div class="en-name-wrapper">
+            <label for="enName">الإسم بالإنجليزية </label>
+            <input type="text" name="enName" id="enName" maxlength="255" minlength="4" required>
+        </div>
+        <!-- Barcode Input -->
+        <div class="barcode-wrapper">
+            <label for="code">الباركود</label>
+            <input type="text" name="code" id="code" maxlength="50">
+        </div>
+        <!-- Category Input -->
+        <div class="category-wrapper">
+            <label for="category">النوع</label>
+            <select name="category" id="category" required>
+                <option value="GENERAL">عام</option>
+                <option value="TAB">اقراص</option>
+                <option value="SYRUP">شراب</option>
+                <option value="CREAM">كريم</option>
+                <option value="DROP">نقط</option>
+                <option value="VIAL">حقن</option>
+                <option value="SUPP">لبوس</option>
+            </select>
+        </div>
+        <!-- Initial value Input -->
+        <div class="initial-quantity-wrapper">
+            <label for="initialQuantity">كمية ابتدائية</label>
+            <input type="number" name="initialQuantity" id="initialQuantity" value="0" min="0" max="1000">
+        </div>
+        <!-- Submit form Button -->
+        <div class="add-item-btn-wrapper">
+            <button type="submit">إضافة</button>
+        </div>
+    </div>
+    </form>
+
+    <script type="module" src="../js/create-item-form.js"></script>
+</body>
+</html>

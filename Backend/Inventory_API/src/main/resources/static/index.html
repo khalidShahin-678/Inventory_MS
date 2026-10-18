@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+
+    <!-- Style sheets -->
+     <!-- <link rel="stylesheet" href="./css/sidebar.css"> -->
+    <link rel="stylesheet" href="./css/components/sidebar.css">
+     <link rel="stylesheet" href="/css/master.css">
+     <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <div id="sidebar">
+        <a href="index.html">
+        <div id="sidebar-title">
+            <img src="../assets/icons-svg/boxes.svg" alt="boxes-icon">
+            <h2>المخزن</h2>
+        </div>
+        </a>
+        <div id="navbar">
+            <ul id="navbar-list">
+                <a href="./pages/inventory-items-page.html">
+                <li  id="items-page-nav" >
+                    <img src="../assets/icons-svg/box.svg" alt="box-icon">
+                    <p>الاصناف</p>
+                </li>
+                </a>
+                <a href="./pages/withdrawal-page.html">
+                <li id="withdraw-page-nav">
+                    <img src="../assets/icons-svg/transaction.svg" alt="transaction-icon">
+                    <p>الاصناف المسحوبة</p>
+                </li>
+                </a>
+
+                <a href="./pages/add-stock-page.html">
+                <li id="add-items-sotck-nav">
+                    <img src="../assets/icons-svg/add-icon.svg" alt="add-icon">
+                    <p>اضافة الي المخزن</p>
+                </li>
+                </a>
+                
+                <a href="./pages/item-creation-page.html">
+                <li id="add-items-page-nav">
+                    <img src="/assets/icons-svg/tag-icon.svg" alt="tag-icon">
+                    <p>اضافة كارت صنف</p>
+                </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-page">
+        <a class="card" href="/pages/inventory-items-page.html">
+            <div class="card-image"><img src="../assets/icons-svg/box.svg" alt="box-icon"></div>
+            <p class="card-title">الاصناف</p>
+        </a>
+
+        <a class="card" href="/pages/withdrawal-page.html">
+            <div class="card-image"><img src="../assets/icons-svg/transaction.svg" alt="transaction-icon"></div>
+            <p class="card-title">الاصناف المسحوبة</p>
+        </a>
+
+        <a class="card" href="/pages/add-stock-page.html">
+            <div class="card-image"><img src="../assets/icons-svg/transaction.svg" alt="transaction-icon"></div>
+            <p class="card-title">اضافة الي المخزن</p>
+        </a>
+
+        <a class="card" href="/pages/item-creation-page.html">
+            <div class="card-image"><img src="/assets/icons-svg/tag-icon.svg" alt="tag-icon"></div>
+            <p class="card-title">اضافة كارت صنف</p>
+        </a>
+    </div>
+</body>
+</html>

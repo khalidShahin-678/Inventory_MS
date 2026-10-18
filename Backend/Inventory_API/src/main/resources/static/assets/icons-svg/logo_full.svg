@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" width="520" height="150">
+<rect x="8" y="8" width="134" height="134" rx="34" fill="#0F2A55"/>
+<g fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linejoin="round">
+<path d="m75 31 39 22v44L75 119 36 97V53L75 31Z"/>
+<path d="m36 53 39 22 39-22"/>
+<path d="M75 75v44"/>
+<path d="m88 38.5 24 13.5-37 21-37-21 24-13.5"/>
+</g>
+<text x="170" y="82" direction="rtl" text-anchor="start" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#0F2A55">المخزن</text>
+<text x="170" y="121" font-family="Arial, sans-serif" font-size="25" fill="#64748B">Inventory System</text>
+</svg>
